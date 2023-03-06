@@ -1,28 +1,33 @@
 Para começar um repositorio em sua maquina:
-git init
-
-
+```bash
+$ git init
+```
 
 Para visualizar os arquivos com mais detalhes:
-git status
+```bash
+$ git status
+```
 
 
 
 Para adicionar os arquivos:
+```bash
 git add .   -> todos os arquivos
 ou 
 git add ./path_to_file
 ou para adicionar todos os arquivos no folder colocado
 git add ./folder/*
-
+```
 
 
 Para commitar no git
+```bash
 git commit -m "Sua mensagem descritiva por favor"
-
+```
 
 
 Para visualizar mais informações sobre os commits:
+```bash
 git log
 
 mostra os commits em uma linha (menos informaçoes)
@@ -35,6 +40,7 @@ git log -p
 
 formate os logs com
 git log --pretty="format:%H
+```
 
 Para ver as tags to --pretty
 https://devhints.io/git-log-format
@@ -48,10 +54,13 @@ Para ignorar arquivos com o
 
 
 Para iniciar um repositorio remoto para apenas controlar versões
+```bash
 git init --bare
+```
 
 
 para adicionar o repositorio remoto em seu repositorio main
+```bash
 git remote add servidor-local ./path_to_the_repo
                               [Pode ser qualquer endereço valido para o git]
 
@@ -60,9 +69,10 @@ git remote
 
 listar com mais informações
 git remote -v
-
+```
 
 Para clonar 
+```bash
 git clone [Endereço que voce colocou no endereço do repositorio remoto] [nome da pasta que voce quer onde clone]
 
 
@@ -75,3 +85,4 @@ git pull [repositorio onde voce esta] [branch de onde o repositorio esta os arqu
 
 rename the remote of your current repo
 git remote rename origin local
+```
