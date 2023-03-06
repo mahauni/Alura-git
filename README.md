@@ -93,85 +93,84 @@ rename the remote of your current repo:
 git remote rename origin local
 ```
 
-Para visualizar as branchs
-
-git branch
+### Para visualizar as branchs:
+```bash
+$ git branch
 
 Para criar uma nova branch:
-
-git branch [nome da branch]
-
+$ git branch [nome da branch]
 
 Para mudar para uma branch
-git checkout [nome da branch]
+$ git checkout [nome da branch]
 
 Criar uma branch e mudar diretamente para ela:
-git checkout -b [nome da branch]
-
+$ git checkout -b [nome da branch]
+```
 Para visualizar com maiores detalhes como fuciona as branchs:
 https://git-school-github.io/visualizing-git/
 
 
-Para unificar sua branch de desenvolvimento com a master e criando um unico commit (merge commit) para demonstrar essa ação:
-git merge [nome da branch de desenvolvimento]
-
-
+### Para unificar sua branch de desenvolvimento com a master e criando um unico commit (merge commit) para demonstrar essa ação:
+```bash
+$ git merge [nome da branch de desenvolvimento]
+```
+```bash
 Para voce unificar a branch mantendo os commits da branch de desenvolvimento na master:
-git rebase [nome da branch de desenvolvimento]
-
+$ git rebase [nome da branch de desenvolvimento]
+```
 
 Para desfazer de alterações no git:
-
+```bash
 Não foi ainda git add
-git checkout -- [nome do arquivo]
+$ git checkout -- [nome do arquivo]
 
 Quando foi git add:
-git reset HEAD [nome do arquivo]
+$ git reset HEAD [nome do arquivo]
 
 Quando foi git commit:
-git revert [hash do commit]
+$ git revert [hash do commit]
+```
 
-
-Salvar modificações de forma temporaria onde não utilize commits e gere um log:
-
-git stash
+### Salvar modificações de forma temporaria onde não utilize commits e gere um log:
+```bash
+$ git stash
 
 Para mostrar suas stash:
-git stash list
+$ git stash list
 
 Para recuperar a stash
-git stash apply [numero da stash]
+$ git stash apply [numero da stash]
 e a stash continuaria existindo. Então para limpar a stash
-git stash drop [numero da stash]
+$ git stash drop [numero da stash]
 
 recupera a stash a remove a stash junto
-git stash pop
-
+$ git stash pop
+```
 
 Visualizar um codigo que ja foi pushed no repositorio remoto:
-
-git checkout [hash do push que foi efetuado na repo remota]
-
+```bash
+$ git checkout [hash do push que foi efetuado na repo remota]
+```
 todos os commits feitos aqui serão descartados ao voltar para a master.
 Porém se voce fizer uma branch nesse push. Voce podera modificar e manter as atualizações de seus commits (Ex: como que aconteceu com o vim e neovim)
 
 
 Ver a diferença entre dois commits feitos
-
-git diff [hash do commit antigo]..[hash do commit mais novo]
+```bash
+$ git diff [hash do commit antigo]..[hash do commit mais novo]
 
 Ver as alterações feitas e não commitadas (não foi usado git add)
-git diff
-
+$ git diff
+```
 
 Gerar uma versão release (Gerar um marco):
-
-git tag -a [nome da tag (ex. v0.1.0)] -m "mensagem ao adicionar a tag"
+```bash
+$ git tag -a [nome da tag (ex. v0.1.0)] -m "mensagem ao adicionar a tag"
 
 Mostrar todas as tags disponiveis:
-git tag
+$ git tag
 
 Para colocar a tag no repositorio remoto
-git push origin [tag ex: v0.1.0]
-
+$ git push origin [tag ex: v0.1.0]
+```
 após ser feita a marcação, não é possivel mais modificala. Após esse momento por exemplo, se a versão 0.1 foi released, todos os commits serão apenas para a versão proxima 0.2 nesse exemplo.
