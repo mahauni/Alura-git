@@ -119,7 +119,7 @@ Para voce unificar a branch mantendo os commits da branch de desenvolvimento na 
 $ git rebase [nome da branch de desenvolvimento]
 ```
 
-Para desfazer de alterações no git:
+### Para desfazer de alterações no git:
 ```bash
 Não foi ainda git add
 $ git checkout -- [nome do arquivo]
@@ -147,7 +147,7 @@ recupera a stash a remove a stash junto
 $ git stash pop
 ```
 
-Visualizar um codigo que ja foi pushed no repositorio remoto:
+### Visualizar um codigo que ja foi pushed no repositorio remoto:
 ```bash
 $ git checkout [hash do push que foi efetuado na repo remota]
 ```
@@ -155,7 +155,7 @@ todos os commits feitos aqui serão descartados ao voltar para a master.
 Porém se voce fizer uma branch nesse push. Voce podera modificar e manter as atualizações de seus commits (Ex: como que aconteceu com o vim e neovim)
 
 
-Ver a diferença entre dois commits feitos
+### Ver a diferença entre dois commits feitos
 ```bash
 $ git diff [hash do commit antigo]..[hash do commit mais novo]
 
@@ -163,7 +163,7 @@ Ver as alterações feitas e não commitadas (não foi usado git add)
 $ git diff
 ```
 
-Gerar uma versão release (Gerar um marco):
+### Gerar uma versão release (Gerar um marco):
 ```bash
 $ git tag -a [nome da tag (ex. v0.1.0)] -m "mensagem ao adicionar a tag"
 
