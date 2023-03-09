@@ -89,6 +89,9 @@ git push [do repositori em que voce esta] [para o repositorio remote que voce qu
 Pega as mudanças do repositorio:
 git pull [repositorio onde voce esta] [branch de onde o repositorio esta os arquivos]
 
+Não precisa mais colocar o repo e a branch ao dar git push, pois ele será salvo por causa do -u
+git push -u [repo] [branch]
+
 rename the remote of your current repo:
 git remote rename origin local
 ```
